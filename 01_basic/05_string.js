@@ -16,7 +16,7 @@ names__proto__
 
 
 const newstrings="    hi   ";
-console.log(newstrings.trim())0;//only for white space
+console.log(newstrings.trim());//only for white space
 
 const url = "http://hitsh.com/hitets%20choudhary"
 
