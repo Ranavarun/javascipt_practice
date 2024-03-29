@@ -27,11 +27,21 @@ function one(){
 
 }
 
+
+
+
 // one()
 
+
+
+//chotha bacha bado sa icecream maang saktha ha par bada nahi kar saktha ha 
+
+
+
+
 if (true) {
-    const username = "hitesh"
-    if (username === "hitesh") {
+    const username = "varun"
+    if (username === "varun") {
         const website = " youtube"
         // console.log(username + website);
     }
@@ -42,9 +52,10 @@ if (true) {
 
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
+//hoisting
 
 
-console.log(addone(5))
+console.log(addone(5))//6 error nahi dega
 
 function addone(num){
     return num + 1
@@ -52,7 +63,7 @@ function addone(num){
 
 
 
-addTwo(5)
+addTwo(5)//error dega function declare huya ha const ka  sath 
 const addTwo = function(num){
     return num + 2
 }
