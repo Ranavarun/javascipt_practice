@@ -38,7 +38,7 @@ function loginUserMessage(username = "varun"){
 // console.log(loginUserMessage("hitesh"))
 // console.log(loginUserMessage("hitesh"))
 
-//... in function parameter take muliple inputs
+//... rest operator in function parameter take muliple inputs
 function calculateCartPrice(val1, val2, ...num1){
     return num1
 }
