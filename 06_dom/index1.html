@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+//    function addLanguage(langName){
+
+//    const li = document.createElement('li');
+//    li.innerHTML = `${langName}`
+//    document.querySelector('.language').appendChild(li)
+//    //tree traversal all demrit optimization 
+//    }
+
+//    addLanguage("c++")
+//    addLanguage("javas")
+
+
+   function addOptLanguage(Lang)
+   {
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(Lang))
+    document.querySelector('.language').appendChild(li)
+   }
+   addOptLanguage("c")
+   addOptLanguage("c#")
+
+   //append child pura tree traversal nah i karna padtha h 
+
+   
+  //edit
+
+const secondLang=document.querySelector("li:nth-child(2)");
+// secondLang.innerHTML="mojo"
+
+const newli = document.createElement('li')
+newli.textContent = "mojo"
+secondLang.replaceWith(newli)
+
+
+const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+
+
+//remove
+const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+
+
+
+
+
+
+</script>
+</html>
