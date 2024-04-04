@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <img src="" alt="" class="pointer">
+        <span></span>
+        <button>submit</button>
+    </div>
+</body>
+<script>
+const span = document.querySelector('span')
+   const img = document.querySelector('.pointer')
+   const button = document.querySelector('button')
+   const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)//to convert in object 
+            button.addEventListener('click',(e)=>{
+
+                img.src = data.avatar_url
+                span.innerHTML = data.followers
+      
+             },0)
+        }
+    }
+    xhr.send();
+   
+   
+
+
+</script>
+</html>
