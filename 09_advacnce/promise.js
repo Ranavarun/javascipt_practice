@@ -1,5 +1,7 @@
 
 // promise is object 
+//404 as a response
+//errer only when request is not made
 //CRETATION
 
 const promiseOne = new Promise((resolve,reject)=>{
